@@ -114,27 +114,17 @@
                     <li><a href="#">Inicio</a></li>
                     <li tabindex="0">
                         <a>
-                            Preguntas
+                            Apartados
                             <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 viewBox="0 0 24 24">
                                 <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                             </svg>
                         </a>
                         <ul class="p-2">
-                            <li><a class="btn btn-active bg-gray-700" href="#1">Numero 1</a></li>
-                            <li><a class="btn btn-active bg-gray-700" href="#2">Numero 2</a></li>
-                            <li><a class="btn btn-active bg-gray-700" href="#3">Numero 3</a></li>
-                            <li><a class="btn btn-active bg-gray-700" href="#4">Numero 4</a></li>
-                            <li><a class="btn btn-active bg-gray-700" href="#5">Numero 5</a></li>
-                            <li><a class="btn btn-active bg-gray-700" href="#6">Numero 6</a></li>
-                            <li><a class="btn btn-active bg-gray-700" href="#7">Numero 7</a></li>
-                            <li><a class="btn btn-active bg-gray-700" href="#8">Numero 8</a></li>
-                            <li><a class="btn btn-active bg-gray-700" href="#9">Numero 9</a></li>
-                            <li><a class="btn btn-active bg-gray-700" href="#10">Numero 10</a></li>
-                            <li><a class="btn btn-active bg-gray-700" href="#11">Numero 11</a></li>
-                            <li><a class="btn btn-active bg-gray-700" href="#12">Numero 12</a></li>
-                            <li><a class="btn btn-active bg-gray-700" href="#13">Numero 13</a></li>
-                            <li><a class="btn btn-active bg-gray-700" href="#14">Numero 14</a></li>
+                            <li><a class="btn btn-active bg-gray-700 mx-auto" href="#info">HTML</a></li>
+                            <li><a class="btn btn-active bg-gray-700 mx-auto" href="#labo3">CSS</a></li>
+                            <li><a class="btn btn-active bg-gray-700 mx-auto" href="#labo4">JS</a></li>
+                            <li><a class="btn btn-active bg-gray-700 mx-auto" href="#labo5">FRAMEWORK</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -159,16 +149,223 @@
         </div>
     </div>
     <div id="info" class="w-full flex flex-col py-10">
-        <h1 class=" text-5xl font-bold mx-auto pb-6 pt-8">Preguntas:</h1>
+        <h1 class=" text-5xl font-bold mx-auto pb-6 pt-8">HTML:</h1>
 
         <div class="divider px-10"></div>
 
         <section id="preguntas" class="w-full md:w-10/12 lg:w-8/12 mx-auto flex flex-col space-y-8">
         </section>
-        <!-- <div class="divider divider-horizontal py-20 "></div>
-        <aside class="w-full sm:w-4/12 flex justify-center font-bold text-3xl">
-            <div class=" w-3/4 pt-28 "><div class="bg-gray-700 h-full text-white text-center"> Hola</div></div>
-        </aside> -->
+
+        <br id="labo3" /><br />
+        <h1 class=" text-5xl font-bold mx-auto pb-6 pt-16">CSS:</h1>
+
+        <div class="divider px-10"></div>
+
+        <section id="lab3" class="w-full md:w-10/12 lg:w-8/12 mx-auto flex flex-col space-y-8">
+        </section>
+
+        <br id="labo4" /><br />
+        <h1 class=" text-5xl font-bold mx-auto pb-6 pt-16">JavaScript</h1>
+
+        <div class="divider px-10"></div>
+
+        <section id="lab4" class="w-full md:w-10/12 lg:w-8/12 mx-auto flex flex-col space-y-8">
+            <h1 class="text-3xl font-bold pb-6 ml-6">Función 1</h1>
+            <div class="flex flex-col items-center justify-center w-11/12 mx-auto">
+                <div
+                    class="w-full flex mb-6 h-full flex-col sm:flex-row space-y-4 sm:space-x-8 justify-center items-center mx-auto">
+                    <label class="font-semibold w-full text-center my-auto text-xl">Escribe un numero:</label> <input
+                        id="inputf1" type="number" value="0"
+                        class="input input-bordered input-info w-full max-w-xs border-4 my-auto text-center" min=" 0"
+                        max="100" required />
+                    <button onclick="funcion1()" class="btn my-auto font-bold">Calcular</button>
+                </div>
+                <div class="mt-10 overflow-x-auto w-full mx-auto block shadow-sm shadow-black rounded-xl">
+                    <table class="table w-full">
+                        <thead>
+                            <tr id="fun1head"> </tr>
+                        </thead>
+                        <tbody id="fun1body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <h1 class="text-3xl font-bold pb-6 ml-6">Función 2</h1>
+            <div class="w-full flex items-center justify-center w-11/12 mx-auto">
+                <kbd class="kbd" id="f2num1"></kbd>
+                <span class="mx-6 text-xl font-bold">+</span>
+                <kbd class="kbd" id="f2num2"></kbd>
+                <span class="mx-6 text-xl font-bold">=</span>
+                <kbd class="kbd" id="f2res"></kbd>
+
+                <button onclick="funcion2()" class="btn ml-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px"
+                        height="17px" viewBox="0 -0.5 17 17" version="1.1" class="si-glyph si-glyph-arrow-backward">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path
+                                d="M1.307,5.988 L6.616,1.343 C7.027,0.933 7.507,0.864 7.918,1.275 L7.918,4.407 C8.014,4.406 8.098,4.406 8.147,4.406 C13.163,4.406 16.885,7.969 16.885,12.816 C16.885,14.504 16.111,13.889 15.788,13.3 C14.266,10.52 11.591,8.623 8.107,8.623 C8.066,8.623 7.996,8.624 7.917,8.624 L7.917,11.689 C7.506,12.099 6.976,12.05 6.615,11.757 L1.306,7.474 C0.897,7.064 0.897,6.399 1.307,5.988 L1.307,5.988 Z"
+                                fill="#FFFFFF" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div class="alert shadow-lg alert-success w-10/12 mx-auto">
+                <div class="mx-auto text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span id="f2message"></span>
+                </div>
+            </div>
+
+            <h1 class="ml-6 text-3xl font-bold">Función 3</h1>
+            <div
+                class="w-11/12 flex mb-6 h-full flex-col sm:flex-row space-y-4 sm:space-x-8 justify-center items-center mx-auto">
+                <label class="font-semibold w-full text-center my-auto text-xl">Escribe un numero:</label> <input
+                    id="inputf3" type="number" value="0"
+                    class="input input-bordered input-info w-full max-w-xs border-4 my-auto text-center" min="-100"
+                    max="100" required />
+                <button onclick="funcion3()" class="btn my-auto font-bold">Agregar</button>
+            </div>
+            <div class="flex flex-wrap  w-11/12 items-start justify-center ">
+                <div class="w-full sm:w-8/12">
+                    <h3 class="font-semibold w-10/12 mx-auto my-auto text-xl w-full">Lista:</h3>
+                    <div class="flex w-full flex-wrap justify-center p-4" id="f3lista">
+                        No hay ningun dato en la lista :(
+                    </div>
+                </div>
+
+                <div class="w-full sm:w-4/12">
+                    <h3 class="font-semibold mx-auto my-auto text-xl w-10/12">Analisis:</h3>
+                    <div class="flex flex-col w-10/12 mx-auto p-4">
+                        <div class="flex flex-row space-x-8">
+                            <h3>Negativos: </h3>
+                            <p id="f3neg">0</p>
+                        </div>
+                        <div class="flex flex-row space-x-8">
+                            <h3>Ceros: </h3>
+                            <p id="f3zer">0</p>
+                        </div>
+                        <div class="flex flex-row space-x-8">
+                            <h3>Positivos: </h3>
+                            <p id="f3pos">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex flex-row w-11/12 place-content-between mx-auto">
+                <h1 class="text-3xl font-bold">Función 4</h1>
+                <button onclick="funcion4()" class="btn ml-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px"
+                        height="17px" viewBox="0 -0.5 17 17" version="1.1" class="si-glyph si-glyph-arrow-backward">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path
+                                d="M1.307,5.988 L6.616,1.343 C7.027,0.933 7.507,0.864 7.918,1.275 L7.918,4.407 C8.014,4.406 8.098,4.406 8.147,4.406 C13.163,4.406 16.885,7.969 16.885,12.816 C16.885,14.504 16.111,13.889 15.788,13.3 C14.266,10.52 11.591,8.623 8.107,8.623 C8.066,8.623 7.996,8.624 7.917,8.624 L7.917,11.689 C7.506,12.099 6.976,12.05 6.615,11.757 L1.306,7.474 C0.897,7.064 0.897,6.399 1.307,5.988 L1.307,5.988 Z"
+                                fill="#FFFFFF" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div class="flex flex-row w-full">
+                <div class=" w-10/12">
+                    <h3 class="font-semibold mx-auto my-auto text-xl w-10/12">Matriz aleatoria:</h3>
+                </div>
+                <div class=" w-2/12 ">
+                    <h3 class="font-semibold mx-auto my-auto text-xl w-10/12">X̅:</h3>
+                </div>
+            </div>
+            <div class="w-11/12 flex mb-12 h-full flex-row items-start justify-start mx-auto">
+                <div id="f4cont" class=" flex w-10/12 flex-col space-y-4 mx-auto"></div>
+                <div id="f4prom" class=" flex w-2/12 mx-auto flex-col space-y-4 mx-auto"></div>
+            </div>
+
+
+
+            <h1 class="text-3xl font-bold w-11/12 mx-auto">Función 5</h1>
+            <div
+                class="w-11/12 flex mb-6 h-full flex-col sm:flex-row space-y-4 sm:space-x-8 justify-center items-center mx-auto">
+                <label class="font-semibold w-full text-center my-auto text-xl">Escribe un numero:</label> <input
+                    id="inputf5" type="number" value="0"
+                    class="input input-bordered input-info w-full max-w-xs border-4 my-auto text-center" />
+                <div class="flex flex-row items-center space-x-4"><button onclick="funcion5()"
+                        class="btn my-auto font-bold">Invertir</button> <kbd class="kbd text-2xl" id="f5res">0</kbd>
+                </div>
+            </div>
+
+            <h1 class="text-3xl font-bold w-11/12 mx-auto">Función 6</h1>
+            <div class="w-11/12 flex mb-6 h-full flex-col space-y-4 sm:space-x-8 mx-auto">
+
+                <div class="w-11/12  bg-gray-200 flex flex-col space-y-8 p-4 rounded-xl mx-auto">
+                    <h2 class="font-bold w-full my-auto text-2xl text-gray-800/70">Crear Nota . . .
+                    </h2>
+                    <div class="flex flex-col sm:flex-row">
+                        <h2
+                            class="font-semibold w-full text-center sm:text-right my-auto text-xl text-gray-800/60 pr-2 sm:w-3/12">
+                            Nombre:
+                        </h2> <input id="inputf61" type="text" value="" placeholder="Nombre de la nota"
+                            class="input input-bordered sm:w-9/12 w-full">
+                    </div>
+                    <div class="flex flex-col sm:flex-row">
+                        <h2
+                            class="font-semibold w-full  text-center sm:text-right p-2 text-xl text-gray-800/60 pr-2 w-full sm:w-3/12">
+                            Descripción:</h2> <textarea id="inputf62" type="text" value=""
+                            placeholder="Describe la nota"
+                            class="textarea h-32 textarea-bordered sm:w-9/12 w-full"></textarea>
+                    </div>
+                    <div class="flex justify-end">
+                        <button class="btn" onclick="funcion6()">Agregar</button>
+                    </div>
+                </div>
+                <h1 class='text-2xl font-semibold'>Notas: </h1>
+                <div class="block w-11/12 mx-auto flex flex-row overflow-auto flex-wrap h-96 rounded-xl bg-gray-200/60 items-center justify-center"
+                    id="f6card"></div>
+
+            </div>
+            <h1 class="text-3xl font-bold w-11/12 mx-auto">Preguntas:</h1>
+            <section id="lab4" class="w-full md:w-10/12 lg:w-8/12 mx-auto flex flex-col space-y-8">
+
+            </section>
+        </section>
+        <br id="labo5" /><br />
+        <h1 class=" text-5xl font-bold mx-auto py-6">¿Que es Tailwind?</h1>
+        <section id="lab5" class="w-11/12 md:w-10/12 lg:w-8/12 mx-auto flex flex-col space-y-4">
+            <p class="font-semibold"> La documentación oficial de tailwind, lo define como:</p>
+            <p class="italic w-11/12 sm:8/12 mx-auto text-center">“Tailwind CSS es un framework CSS de bajo nivel
+                altamente personalizable que le permite crear diseños
+                personalizados eliminando los estilos de componentes pre-definidos que necesitarías sobre-escribir en
+                todo caso”.</p>
+            <p class="font-semibold pl-4"> Ejemplo:</p>
+            <div class="flex flex-col items-center justify-center space-y-4 md:flex-row space-x-8">
+                <div class="mockup-code">
+                    <code class="w-11/12 flex mx-auto text-slate-200">
+                    <span class="">&lt;<span class="text-purple-400">img</span> class=<span class="text-cyan-400">"object-cover rounded-full w-24 h-24"
+                        </span>src="/imagen.jpg"&gt;</span>
+                    
+                </code>
+
+                </div>
+                <div>
+                    <img class="mx-auto object-cover rounded-full w-24 h-24"
+                        src="https://tailwindcss.com/_next/static/media/sarah-dayan.a8ff3f1095a58085a82e3bb6aab12eb2.jpg"
+                        alt="" width="384" height="512">
+                </div>
+            </div>
+            <p class="mx-auto"> Y asi de facil es poner una imagen redondeada</p>
+
+            <h1 class=" text-5xl font-bold mx-auto pb-6 pt-16 text-center">Ventajas de Tailwind</h1>
+            <p class="font-semibold">-> Es altamente personalizable<br />
+                -> Tiene patrones de utilidad comunes<br />
+                -> Se puede optimizar usando PurgeCSS<br />
+                -> Permite la creación de diseños complejos y responsive de forma libre<br />
+                -> Facilita la interacción fluida con la comunidad
+            </p>
+            <p class="mx-auto">Toda esta pagina esta estilizada con Tailwind y es responsiva</p>
+        </section>
+
     </div>
     <footer class="p-10 footer bg-neutral text-neutral-content">
         <div>
@@ -246,6 +443,8 @@
                 <p class="italic hover:underline">Creada con Visual Studio Code<br>por José Ángel Rico Mendieta</p>
             </a>
 
+
+
         </div>
         <div>
             <span class="footer-title">Social</span>
@@ -275,7 +474,7 @@
 
     <!-- modals -->
     <div id="modales">
-        
+
     </div>
 
     <script src="main.js"></script>
