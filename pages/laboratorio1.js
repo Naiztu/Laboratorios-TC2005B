@@ -1,3 +1,8 @@
+import React from "react";
+import Card from "./components/Card";
+import Modal from "./components/Modal";
+import Layaout from "./components/Layaout";
+
 const listlab1 = [
   {
     id: "1",
@@ -5,27 +10,27 @@ const listlab1 = [
     response: `<strong> Internet -></strong> es una inmensa red de computadoras alrededor de todo el mundo conectadas entre sí. <br /><strong> WWW -> </strong> La web (World Wide Web) es una enorme colección de páginas que se asienta sobreesa red de computadoras. <br />Así que cuando navegas a través de tu celular o computadora usas internet para acceder a la web.`,
     image: "https://definicion.de/wp-content/uploads/2008/05/WWW-1.jpg",
     apa: `BBC News Mundo. (2019, 12 marzo). ¿Cuál es la diferencia entre
-    internet
-    y la
-    web? (y por qué
-    muchos las confunden). Recuperado 14 de febrero de 2022, de
-    `,
+      internet
+      y la
+      web? (y por qué
+      muchos las confunden). Recuperado 14 de febrero de 2022, de
+      `,
     link: "https://www.bbc.com/mundo/noticias-47538812#:~:text=Internet%20es%20una%20inmensa%20red,para%20acceder%20a%20la%20web.",
   },
   {
     id: "2",
     question: "¿Cuáles son las partes de un URL?",
     response: `<strong>-></strong> Protocolo HTTP/S <br />
-      <strong>-></strong> Subdominio<br />
-      <strong>-></strong> Dominio<br />
-      <strong>-></strong> TLD<br />
-      <strong>-></strong> Ruta<br />
-      <strong>-></strong> Parámetro<br />
-      <strong>-></strong> Etiqueta`,
+        <strong>-></strong> Subdominio<br />
+        <strong>-></strong> Dominio<br />
+        <strong>-></strong> TLD<br />
+        <strong>-></strong> Ruta<br />
+        <strong>-></strong> Parámetro<br />
+        <strong>-></strong> Etiqueta`,
     image:
       "https://comofuncionaque.com/wp-content/uploads/2015/04/La-URL-es-la-direccion-de-una-informacion-que-se-encuentra-en-un-determinado-alojamiento-o-dominio-de-la-red.png",
     apa: ` Pukocz, E. (2019, 14 noviembre). Partes de una URL con ejemplos y explicación fácil. Edyta Pukocz.
-    Recuperado 14 de febrero de 2022, de `,
+      Recuperado 14 de febrero de 2022, de `,
     link: "https://edytapukocz.com/url-partes-ejemplos-facil/",
   },
   {
@@ -33,10 +38,10 @@ const listlab1 = [
     question:
       "¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?",
     response: `<strong>GET -> </strong>Se emplea para leer una representación de un recurso<br />
-      <strong>POST -> </strong>Se emplea para el envio de datos<br />
-      <strong>PUT -> </strong> Se emplea para la actualizacion de informacion existente<br />
-      <strong>PATCH -> </strong> Se emplea para modificaciones parciales de un recurso en particular.<br />
-      <strong>DELETE -></strong> Se emplea para eliminar informción existente`,
+        <strong>POST -> </strong>Se emplea para el envio de datos<br />
+        <strong>PUT -> </strong> Se emplea para la actualizacion de informacion existente<br />
+        <strong>PATCH -> </strong> Se emplea para modificaciones parciales de un recurso en particular.<br />
+        <strong>DELETE -></strong> Se emplea para eliminar informción existente`,
     image: "https://ports.zone/statics/home2/img/http.svg",
     apa: `Morales, W. (2021, 1 junio). Métodos HTTP – POST, GET, PUT, DELETE. Estilo Web. Recuperado 14 de febrero de 2022, de: `,
     link: "http://estilow3b.com/metodos-http-post-get-put-delete/#:~:text=Sem%C3%A1nticamente%20el%20m%C3%A9todo%20HTTP%20PUT,es%20similar%20a%20un%20UPDATE.",
@@ -95,10 +100,10 @@ const listlab1 = [
     question:
       "¿Qué significa que un atributo HTML5 esté depreciado o desaprobado(deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.",
     response: `Son partes del estándar HTML cuyo uso ya no es recomendado, algunos ejemplos son:<br/>
-        <strong> applet ->  </strong>remplazado por object <br/>
-        <strong> dir ->  </strong>remplazado por ul <br/>
-        <strong> insindex ->  </strong>remplazado por input <br/>
-        <strong> menu ->  </strong>remplazado por ul`,
+          <strong> applet ->  </strong>remplazado por object <br/>
+          <strong> dir ->  </strong>remplazado por ul <br/>
+          <strong> insindex ->  </strong>remplazado por input <br/>
+          <strong> menu ->  </strong>remplazado por ul`,
     image: "https://leadsfac.com/wp-content/uploads/2019/07/que-es-html5.jpg",
     apa: `05.Tags y atributos desaprobados en HTML - TODO HTML. (s. f.). Todo HTML. Recuperado 14 de febrero de 2022, de: `,
     link: "https://sites.google.com/site/dwebhtml/reference/deprecated#:%7E:text=Los%20tags%20y%20atributos%20desaprobados,son%20agregada%2C%20removidas%20o%20desaprobadas.",
@@ -107,10 +112,10 @@ const listlab1 = [
     id: "10",
     question: "¿Cuáles son las diferencias principales entre HTML 4 y HTML5?",
     response: `Las principales diferencias entre el HTML 4 y 5, son:<br/>
-    <strong> meta ->  </strong>etiqueta usada para definir un juego de caracteres. <br/>
-    <strong> doctype ->  </strong>se simplifico <br/>
-    <strong> svg ->  </strong>permite incluir elementos SVG <br/>
-    <strong> ->  </strong>Se introducen nuevos elementos, como: section, article, aside, header, footer, etc. <br/>`,
+      <strong> meta ->  </strong>etiqueta usada para definir un juego de caracteres. <br/>
+      <strong> doctype ->  </strong>se simplifico <br/>
+      <strong> svg ->  </strong>permite incluir elementos SVG <br/>
+      <strong> ->  </strong>Se introducen nuevos elementos, como: section, article, aside, header, footer, etc. <br/>`,
     image:
       "http://www.psdahtmlpasoapaso.com/blog/wp-content/uploads/2013/04/html4-html5.jpg",
     apa: `Mora, S. L. (2011, 17 enero). ¿Cuáles son las diferencias entre HTML4 (XHTML 1.0) y HTML5? – Programación en Internet. Programación en Internet. Recuperado 14 de febrero de 2022, de: `,
@@ -146,17 +151,17 @@ const listlab1 = [
   {
     id: "14",
     question: `Sobre el ciclo de vida y desarrollo de los sistemas de información:
-    ¿Cuál es el ciclo de vida de los sistemas de información?
-    ¿Cuál es el ciclo de desarrollo de sistemas de información?`,
+      ¿Cuál es el ciclo de vida de los sistemas de información?
+      ¿Cuál es el ciclo de desarrollo de sistemas de información?`,
     response: `
-    <span class="font-bold">Fase de planificación.</span> En esta fase se prepara el diseño y posterior implementación del sistema.<br/>
-    <span class="font-bold">Fase de análisis.</span> Una vez que el equipo de proyecto se decide por una metodología de desarrollo determinada.<br/>
-    <span class="font-bold">Fase de diseño.</span> En este estadio el equipo de proyecto tendrá que determinar cómo el nuevo sistema de información cumplirá con los requisitos aplicables.<br/>
-    <span class="font-bold">Fase de desarrollo.</span> Marca las operaciones de la realizacion del proyecto.<br/>
-    <span class="font-bold">Fase de integración y periodo de pruebas.</span> El objetivo de esta etapa es corroborar que el diseño propuesto cumple con los requisitos de negocio establecidos. <br/>
-    <span class="font-bold">Fase de implementación.</span> Se proceder a la instalación del hardware y software elegidos.<br/>
-    <span class="font-bold">Fase de mantenimiento.</span> Consiste en introducir los ajustes necesarios para mejorar el rendimiento y corregir los problemas que puedan surgir. <br/>
-    `,
+      <span className="font-bold">Fase de planificación.</span> En esta fase se prepara el diseño y posterior implementación del sistema.<br/>
+      <span className="font-bold">Fase de análisis.</span> Una vez que el equipo de proyecto se decide por una metodología de desarrollo determinada.<br/>
+      <span className="font-bold">Fase de diseño.</span> En este estadio el equipo de proyecto tendrá que determinar cómo el nuevo sistema de información cumplirá con los requisitos aplicables.<br/>
+      <span className="font-bold">Fase de desarrollo.</span> Marca las operaciones de la realizacion del proyecto.<br/>
+      <span className="font-bold">Fase de integración y periodo de pruebas.</span> El objetivo de esta etapa es corroborar que el diseño propuesto cumple con los requisitos de negocio establecidos. <br/>
+      <span className="font-bold">Fase de implementación.</span> Se proceder a la instalación del hardware y software elegidos.<br/>
+      <span className="font-bold">Fase de mantenimiento.</span> Consiste en introducir los ajustes necesarios para mejorar el rendimiento y corregir los problemas que puedan surgir. <br/>
+      `,
     image:
       "https://www.gestiopolis.com/wp-content/uploads/2015/07/ciclo-de-vida-de-un-sistema-de-informacion-2.jpg.webp",
     apa: ``,
@@ -164,57 +169,26 @@ const listlab1 = [
   },
 ];
 
+function laboratorio1() {
+  return (
+    <Layaout>
+      <div className="pt-16">
+        <h1 className=" text-5xl font-bold mx-auto pb-6 pt-8 text-center">Preguntas:</h1>
 
-function createCard(item) {
-  let newdiv = document.createElement("div");
-  newdiv.innerHTML = `
-  <br id="${item.id}" /><br />
-              <article class="card bg-base-100 articulo mt-8">
-                  <div class="imagen"
-                      style=" background-image:linear-gradient(rgba(5,7,12,.75),rgba(5,7,12,.75)),url(${item.image})">
-                  </div>
-                  <div class="card-body md:w-7/12">
-                      <h2 class="card-title text-center">${item.question}</h2>
-                      <div class="m-auto pt-4">
-                          <div class="m-auto text-justify">
-                              <p>${item.response}</p>
-                          </div>
-                      </div>
-                      <div class="justify-end card-actions">
-                          <label for="modal${item.id}" class="btn modal-button">Apa</label>
-                      </div>
-  
-                  </div>
-              </article>
-  `;
-  return newdiv;
+        <div className="divider px-10"></div>
+        <section
+          className="w-full md:w-10/12 lg:w-8/12 mx-auto flex flex-col space-y-8 mb-10"
+        >
+          {listlab1.map((item) => (
+            <Card item={item} key={item.id}></Card>
+          ))}
+        </section>
+      </div>
+      {listlab1.map((item) => (
+            <Modal  item={item} key={item.id}></Modal>
+          ))}
+    </Layaout>
+  );
 }
 
-function createModal(item) {
-  let newdiv = document.createElement("div");
-  newdiv.innerHTML = `
-  <input type="checkbox" id="modal${item.id}" class="modal-toggle">
-          <div class="modal">
-              <div class="modal-box">
-                  <h3 class="font-bold text-lg">Referencia Apa:</h3>
-                  <p class="mx-auto py-4 w-10/12 text-justify overflow-hidden">
-                  ${item.apa}
-                  <a class="link link-primary"
-                          href="${item.link}"
-                          target="_blank">${item.link}</a>
-                  </p>
-                  <div class="modal-action">
-                      <label for="modal${item.id}" class="btn">Ok</label>
-                  </div>
-              </div>
-          </div>
-  `;
-  return newdiv;
-}
-const cont = document.getElementById("preguntas");
-const mod = document.getElementById("modales");
-
-listlab1.map((item) => {
-  cont.appendChild(createCard(item));
-  mod.appendChild(createModal(item));
-});
+export default laboratorio1;
