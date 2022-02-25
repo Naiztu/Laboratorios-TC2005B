@@ -63,8 +63,8 @@ export default function Funcion6() {
         >
           {notas.legth === 0
             ? ""
-            : notas.map((item) => (
-                <div className="card bg-slate-300 mx-4 mt-4 mb-6 w-[300px] p-4 shadow-xl flex flex-col">
+            : notas.map((item, index) => (
+                <div key={index} className="card bg-slate-300 mx-4 mt-4 mb-6 w-[300px] p-4 shadow-xl flex flex-col">
                   <h1 className="text-2xl uppercase">{item.name}</h1>
                   <p className="w-11/12 mx-auto">{item.desp}</p>
                 </div>

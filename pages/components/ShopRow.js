@@ -7,7 +7,7 @@ export default function ShopRow({ item, setProducts, products }) {
     <tr>
       <td className="hidden pb-4 md:table-cell">
         <a href="#">
-          <img src={`${item.img}`} className="w-20 rounded" alt="Thumbnail" />
+          <img src={`${item.img}`} className="w-20 rounded" alt={`${item.name}`} />
         </a>
       </td>
       <td>

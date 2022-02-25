@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Alert from "../Alert";
+import Alert from "./Alert";
 
-export default function Login({ access, setAccess }) {
+export default function Login({setAccess }) {
   const initUser = { user: "", pass: "" };
   const [l6, setL6] = useState(initUser);
   const [login, setLogin] = useState(true);

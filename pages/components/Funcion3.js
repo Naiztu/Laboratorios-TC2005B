@@ -25,7 +25,7 @@ export default function Funcion3() {
       positivos: numPos,
       negativos: numNeg,
     });
-  }, [f3.lista])
+  }, [f3])
   
 
   const updateF3 = () => {

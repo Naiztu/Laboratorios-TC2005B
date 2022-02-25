@@ -9,7 +9,7 @@ function Modal({ item }) {
           <h3 className="font-bold text-lg">Referencia Apa:</h3>
           <p className="mx-auto py-4 w-10/12 text-justify overflow-hidden">
             {item.apa}
-            <a className="link link-primary" href={item.link} target="_blank">
+            <a className="link link-primary" href={item.link} target="_blank" rel="noreferrer" >
               {item.link}
             </a>
           </p>

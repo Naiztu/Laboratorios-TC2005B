@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Alert from "./Alert";
+import React, { useState } from 'react';
 import Card from "./components/Card";
 import Layaout from "./components/Layaout";
 import Login from "./components/Login";
@@ -40,12 +39,12 @@ const listlab6 = [
 
 export default function laboratorio6() {
 
-  const [access, setAccess] = useState(false);
+const [access, setAccess] = useState(true);
 
   return (
     <Layaout>
       <div className="pt-16">
-        {access ? <Shop /> : <Login access={access} setAccess={setAccess} />}
+        {access ? <Shop /> : <Login setAccess={setAccess} />}
       </div>
       <h1 className="text-3xl font-bold w-11/12 mx-auto text-center mt-16">
         Preguntas:
