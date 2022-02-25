@@ -25,7 +25,12 @@ export default function Funcion3() {
       positivos: numPos,
       negativos: numNeg,
     });
-  }, [f3.lista]);
+  }, [f3.lista])
+  
+
+  const updateF3 = () => {
+    
+  };
 
   const funcion3 = () => {
     setF3({
@@ -33,6 +38,7 @@ export default function Funcion3() {
       lista: f3.lista.concat([inputf3]),
     });
 
+    updateF3
     setInputf3(0);
   };
   return (
@@ -58,13 +64,18 @@ export default function Funcion3() {
       </div>
       <div className="flex flex-wrap  w-11/12 items-start justify-center ">
         <div className="w-full sm:w-8/12">
-          <h3 className="font-semibold w-10/12 mx-auto my-auto text-xl">Lista:</h3>
-          <div className="flex w-full flex-wrap justify-center p-4" id="f3lista">
+          <h3 className="font-semibold w-10/12 mx-auto my-auto text-xl">
+            Lista:
+          </h3>
+          <div
+            className="flex w-full flex-wrap justify-center p-4"
+            id="f3lista"
+          >
             {f3.lista.length === 0
               ? "No hay ningun dato en la lista :("
-              : f3.lista.map((i) => {
+              : f3.lista.map((i,index) => {
                   return (
-                    <kbd key={i} className="kbd mx-2 mb-2">
+                    <kbd key={index} className="kbd mx-2 mb-2">
                       {i}
                     </kbd>
                   );
