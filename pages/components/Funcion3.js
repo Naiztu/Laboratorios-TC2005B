@@ -25,20 +25,14 @@ export default function Funcion3() {
       positivos: numPos,
       negativos: numNeg,
     });
-  }, [f3])
+  }, [f3.lista])
   
-
-  const updateF3 = () => {
-    
-  };
 
   const funcion3 = () => {
     setF3({
       ...f3,
       lista: f3.lista.concat([inputf3]),
     });
-
-    updateF3
     setInputf3(0);
   };
   return (
