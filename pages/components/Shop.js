@@ -1,30 +1,31 @@
 import React, { useState } from "react";
 import ShopRow from "./ShopRow";
 
+const init = [
+  {
+    id: "1",
+    name: "Audifonos",
+    cant: 1,
+    img: "https://limg.app/i/Calm-Cormorant-Catholic-Pinball-Blaster-yM4oub.jpeg",
+    unitPrice: 200,
+  },
+  {
+    id: "2",
+    name: "Tesla Model 3",
+    cant: 1,
+    img: "https://limg.app/i/Cute-Constrictor-Super-Sexy-Military-Enforcer-W7mvBp.png",
+    unitPrice: 2000000,
+  },
+  {
+    id: "3",
+    name: "Pluma",
+    cant: 1,
+    img: "https://limg.app/i/Successful-Spider-Biblical-Mutant---Total-War-lKoE7D.jpeg",
+    unitPrice: 20,
+  },
+];
 export default function Shop() {
-  const [products, setProducts] = useState([
-    {
-      id: "1",
-      name: "Audifonos",
-      cant: 1,
-      img: "https://limg.app/i/Calm-Cormorant-Catholic-Pinball-Blaster-yM4oub.jpeg",
-      unitPrice: 200,
-    },
-    {
-      id: "2",
-      name: "Tesla Model 3",
-      cant: 1,
-      img: "https://limg.app/i/Cute-Constrictor-Super-Sexy-Military-Enforcer-W7mvBp.png",
-      unitPrice: 2000000,
-    },
-    {
-      id: "3",
-      name: "Pluma",
-      cant: 1,
-      img: "https://limg.app/i/Successful-Spider-Biblical-Mutant---Total-War-lKoE7D.jpeg",
-      unitPrice: 20,
-    },
-  ]);
+  const [products, setProducts] = useState(init);
 
   function calculateTotal() {
     const options2 = { style: "currency", currency: "USD" };

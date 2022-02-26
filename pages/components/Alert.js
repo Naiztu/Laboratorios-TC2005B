@@ -1,16 +1,17 @@
 import React from "react";
 
 export default function Alert({ item }) {
+  let { bal, type, text } = item || {};
   return (
     <>
       <div
         className={`transition-all ease-out top-0 right-0 ${
-          item.bal ? "absolute" : " hidden"
+          bal ? "absolute" : " hidden"
         }`}
       >
-        <div className={`alert shadow-lg alert-${item.type}`}>
+        <div className={`alert shadow-lg alert-${type}`}>
           <div>
-            {item.type === "success" ? (
+            {type === "success" ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="stroke-current flex-shrink-0 h-6 w-6"
@@ -39,7 +40,7 @@ export default function Alert({ item }) {
                 />
               </svg>
             )}
-            <span>{item.text}</span>
+            <span>{text}</span>
           </div>
         </div>
       </div>

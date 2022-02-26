@@ -37,7 +37,7 @@ const listlab6 = [
   },
 ];
 
-export default function laboratorio6() {
+export default function Laboratorio6() {
 
 const [access, setAccess] = useState(true);
 

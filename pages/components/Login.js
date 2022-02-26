@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Alert from "./Alert";
 
-export default function Login({setAccess }) {
+export default function Login({ setAccess }) {
   const initUser = { user: "", pass: "" };
   const [l6, setL6] = useState(initUser);
   const [login, setLogin] = useState(true);
@@ -45,13 +45,13 @@ export default function Login({setAccess }) {
 
   let alerts = [
     {
-        id:"1",
+      id: "1",
       bal: error,
       type: "error",
       text: "Incorrecto!",
     },
     {
-        id:"2",
+      id: "2",
       bal: register,
       type: "success",
       text: "Usuario agregado!",
