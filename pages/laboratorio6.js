@@ -39,7 +39,7 @@ const listlab6 = [
 
 export default function Laboratorio6() {
 
-const [access, setAccess] = useState(true);
+const [access, setAccess] = useState(false);
 
   return (
     <Layaout>
