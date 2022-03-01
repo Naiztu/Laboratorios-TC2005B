@@ -3,7 +3,7 @@ import React from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
-export default function Layaout({ children }) {
+export default function Layaout({ children}) {
   return (
     <>
       <Head>

@@ -1,44 +1,26 @@
 import React, { useEffect, useState } from "react";
 
-export default function Funcion3() {
+export default function Promedio() {
   const [inputf3, setInputf3] = useState(0);
-  const [f3, setF3] = useState({
-    zeros: 0,
-    positivos: 0,
-    negativos: 0,
-    lista: [],
-  });
-
-  useEffect(() => {
-    let num0 = 0,
-      numPos = 0,
-      numNeg = 0;
-    f3.lista.map((item) => {
-      item == 0 && num0++;
-      item > 0 && numPos++;
-      item < 0 && numNeg++;
-    });
-
-    setF3({
-      ...f3,
-      zeros: num0,
-      positivos: numPos,
-      negativos: numNeg,
-    });
-  }, [f3.lista])
-  
+  const [f3, setF3] = useState([]);
 
   const funcion3 = () => {
-    setF3({
-      ...f3,
-      lista: f3.lista.concat([inputf3]),
-    });
+    setF3(f3.concat([inputf3]));
     setInputf3(0);
   };
+
+  function ArrayAvg(myArray) {
+    let suma = 0;
+
+    for (let x = 0; x < myArray.length; x++) {
+      suma += myArray[x];
+    }
+    return myArray != 0 ? suma / myArray.length : 0;
+  }
   return (
     <>
-      <h1 className="ml-6 text-3xl font-bold">Función 3</h1>
-      <div className="w-11/12 flex mb-6 h-full flex-col sm:flex-row space-y-4 sm:space-x-8 justify-center items-center mx-auto">
+      <h1 className="title">Promedio</h1>
+      <div className="w-11/12 flex h-full flex-col sm:flex-row space-y-4 sm:space-x-8 justify-center items-center mx-auto">
         <label className="font-semibold w-full text-center my-auto text-xl">
           Escribe un numero:
         </label>{" "}
@@ -56,7 +38,7 @@ export default function Funcion3() {
           Agregar
         </button>
       </div>
-      <div className="flex flex-wrap  w-11/12 items-start justify-center ">
+      <div className="flex flex-wrap  w-11/12 items-start justify-center my-8">
         <div className="w-full sm:w-8/12">
           <h3 className="font-semibold w-10/12 mx-auto my-auto text-xl">
             Lista:
@@ -65,9 +47,9 @@ export default function Funcion3() {
             className="flex w-full flex-wrap justify-center p-4"
             id="f3lista"
           >
-            {f3.lista.length === 0
+            {f3.length === 0
               ? "No hay ningun dato en la lista :("
-              : f3.lista.map((i,index) => {
+              : f3.map((i, index) => {
                   return (
                     <kbd key={index} className="kbd mx-2 mb-2">
                       {i}
@@ -83,16 +65,8 @@ export default function Funcion3() {
           </h3>
           <div className="flex flex-col w-10/12 mx-auto p-4">
             <div className="flex flex-row space-x-8">
-              <h3>Negativos: </h3>
-              <p id="f3neg">{f3.negativos}</p>
-            </div>
-            <div className="flex flex-row space-x-8">
-              <h3>Ceros: </h3>
-              <p id="f3zer">{f3.zeros}</p>
-            </div>
-            <div className="flex flex-row space-x-8">
-              <h3>Positivos: </h3>
-              <p id="f3pos">{f3.positivos}</p>
+              <h3>Promedio: </h3>
+              <p>{new Intl.NumberFormat("es-MX").format(ArrayAvg(f3))}</p>
             </div>
           </div>
         </div>

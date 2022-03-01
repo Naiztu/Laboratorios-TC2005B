@@ -9,3 +9,7 @@
 .imagen{
   @apply w-full md:w-5/12 h-[225px] md:h-full bg-cover bg-center
 }
+
+.title{
+  @apply  text-5xl font-bold mx-auto pb-6 pt-8 text-center
+}

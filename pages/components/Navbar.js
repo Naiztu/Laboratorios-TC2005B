@@ -1,7 +1,8 @@
 import React from "react";
 import Link from 'next/link';
 
-const labs=[1,3,4,5,6]
+
+const labs=[1,2,3,4,5,6,7,8]
 
 function Navbar() {
   return (
@@ -160,7 +161,7 @@ function Navbar() {
                     className="btn btn-active bg-gray-700 mx-auto"
                     href={`/laboratorio${i}`}
                   >
-                    <a className="btn btn-active bg-gray-700 my-1">{`Lab${i}`}</a>
+                    <a className="btn btn-active bg-gray-700 mx-auto mb-1">{`Lab${i}`}</a>
                   </Link>
                 </li>
                 ))}
