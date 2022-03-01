@@ -2,7 +2,7 @@ import React from "react";
 import Link from 'next/link';
 
 
-const labs=[1,2,3,4,5,6,7,8]
+const labs=[1,2,3,4,5,6,7,8,9]
 
 function Navbar() {
   return (

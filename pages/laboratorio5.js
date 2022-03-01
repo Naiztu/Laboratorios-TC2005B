@@ -26,9 +26,9 @@ export default function laboratorio5() {
                 <span className="">
                   &lt;<span className="text-purple-400">img</span> className=
                   <span className="text-cyan-400">
-                  &quot;object-cover rounded-full w-24 h-24&quot;
+                  &quot;object-cover rounded-full w-24 h-24&quot; 
                   </span>
-                  src=&quot;/imagen.jpg&quot;&gt;
+                   src=&quot;/imagen.jpg&quot;&gt;
                 </span>
               </code>
             </div>
