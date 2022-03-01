@@ -4,7 +4,7 @@ import Modal from "./components/Modal";
 import Layaout from "./components/Layaout";
 import { useFetch } from "./components/hooks/useFecth";
 
-function laboratorio1() {
+function Laboratorio1() {
   let url = "/api/html";
   let {data}= useFetch(url);
   return (
@@ -28,4 +28,4 @@ function laboratorio1() {
   );
 }
 
-export default laboratorio1;
+export default Laboratorio1;

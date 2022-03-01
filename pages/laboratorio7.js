@@ -7,7 +7,7 @@ export default function laboratorio7() {
       <div className="pt-16">
         <h1 className=" title">Github</h1>
         <p className="text-center pb-7">Dirección del repositorio de Github en equipo</p>
-        <a href="https://github.com/LeilaelRico/Interfectorem-Eros" target={"_blank"}>
+        <a href="https://github.com/LeilaelRico/Interfectorem-Eros" target={"_blank"} rel="noreferrer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"

@@ -11,7 +11,7 @@ import Layaout from "./components/Layaout";
 import Modal from "./components/Modal";
 
 
-function laboratorio4() {
+function Laboratorio4() {
   let url = "/api/javascript";
   let {data}= useFetch(url);
   return (
@@ -47,4 +47,4 @@ function laboratorio4() {
   );
 }
 
-export default laboratorio4;
+export default Laboratorio4;

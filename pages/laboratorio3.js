@@ -5,7 +5,7 @@ import Layaout from "./components/Layaout";
 import { useFetch } from "./components/hooks/useFecth";
 
 
-export default function laboratorio3() {
+export default function Laboratorio3() {
   let url = "/api/css";
   let {data}= useFetch(url);
   return (

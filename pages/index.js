@@ -23,7 +23,7 @@ export default function Home() {
             <a
               className="btn rounded-full w-12 h-10 p-2 mt-3 animate-bounce lex items-center justify-center"
               href="https://github.com/Naiztu/Laboratorios-TC2005B"
-              target={"_blank"}
+              target={"_blank"} rel="noreferrer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
