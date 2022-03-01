@@ -1,14 +1,14 @@
 import React from "react";
-import Card from "./components/Card";
-import Funcion1 from "./components/Funcion1";
-import Funcion2 from "./components/Funcion2";
-import Funcion3 from "./components/Funcion3";
-import Funcion4 from "./components/Funcion4";
-import Funcion5 from "./components/Funcion5";
-import Funcion6 from "./components/Funcion6";
-import { useFetch } from "./components/hooks/useFecth";
-import Layaout from "./components/Layaout";
-import Modal from "./components/Modal";
+import Card from "../components/Card";
+import Funcion1 from "../components/Funcion1";
+import Funcion2 from "../components/Funcion2";
+import Funcion3 from "../components/Funcion3";
+import Funcion4 from "../components/Funcion4";
+import Funcion5 from "../components/Funcion5";
+import Funcion6 from "../components/Funcion6";
+import { useFetch } from "../components/hooks/useFecth";
+import Layaout from "../components/Layaout";
+import Modal from "../components/Modal";
 
 
 function Laboratorio4() {
