@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import Card from "./components/Card";
-import Modal from "./components/Modal";
-import Layaout from "./components/Layaout";
-import { useFetch } from "./components/hooks/useFecth";
+import Card from "../components/Card";
+import Modal from "../components/Modal";
+import Layaout from "../components/Layaout";
+import { useFetch } from "../components/hooks/useFecth";
 
 function Laboratorio1() {
   let url = "/api/html";
