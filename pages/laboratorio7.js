@@ -1,5 +1,5 @@
 import React from 'react'
-import Layaout from './components/Layaout'
+import Layaout from '../components/Layaout'
 
 export default function laboratorio7() {
   return (

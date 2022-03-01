@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Card from "./components/Card";
-import { useFetch } from "./components/hooks/useFecth";
-import Layaout from "./components/Layaout";
-import Login from "./components/Login";
-import Modal from "./components/Modal";
-import Shop from "./components/Shop";
+import Card from "../components/Card";
+import { useFetch } from "../components/hooks/useFecth";
+import Layaout from "../components/Layaout";
+import Login from "../components/Login";
+import Modal from "../components/Modal";
+import Shop from "../components/Shop";
 
 export default function Laboratorio6() {
   let url = "/api/eventos";

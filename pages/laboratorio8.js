@@ -1,7 +1,7 @@
 import React from "react";
-import Card2 from "./components/Card2";
-import Layaout from "./components/Layaout";
-import Promedio from "./components/Promedio";
+import Card2 from "../components/Card2";
+import Layaout from "../components/Layaout";
+import Promedio from "../components/Promedio";
 
 const data = [
   {
