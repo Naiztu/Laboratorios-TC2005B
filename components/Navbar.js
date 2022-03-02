@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const labs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const labs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 
 function Navbar() {
   return (
@@ -155,7 +155,7 @@ function Navbar() {
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                 </svg>
               </a>
-              <ul className="p-2">
+              <ul className="p-2 overflow-y-auto h-screen scrollbar-thin scrollbar-thumb-transparent  scrollbar-track-transparent ">
                 {labs.map((i) => (
                   <li key={i}>
                     <Link href={`/laboratorio${i}`}>
