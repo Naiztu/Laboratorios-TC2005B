@@ -14,7 +14,7 @@ export default function laboratorio5() {
             La documentación oficial de tailwind, lo define como:
           </p>
           <p className="italic w-11/12 sm:8/12 mx-auto text-center">
-          &quot;Tailwind CSS es un framework CSS de bajo nivel altamente
+            &quot;Tailwind CSS es un framework CSS de bajo nivel altamente
             personalizable que le permite crear diseños personalizados
             eliminando los estilos de componentes pre-definidos que necesitarías
             sobre-escribir en todo caso&quot;.
@@ -26,9 +26,9 @@ export default function laboratorio5() {
                 <span className="">
                   &lt;<span className="text-purple-400">img</span> className=
                   <span className="text-cyan-400">
-                  &quot;object-cover rounded-full w-24 h-24&quot; 
+                    &quot;object-cover rounded-full w-24 h-24&quot;
                   </span>
-                   src=&quot;/imagen.jpg&quot;&gt;
+                  &nbsp; src=&quot;/imagen.jpg&quot;&gt;
                 </span>
               </code>
             </div>

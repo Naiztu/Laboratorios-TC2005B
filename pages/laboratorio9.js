@@ -4,7 +4,7 @@ import Layaout from "../components/Layaout";
 export default function laboratorio9() {
   return (
     <Layaout>
-      <div className=" flex justify-center flex-col h-screen sm:h-full">
+      <div className="pt-16 flex justify-center flex-col h-screen sm:h-full">
         <h1 className="title">Ejercicio en Access</h1>
         <a  href="https://github.com/Naiztu/Laboratorios-TC2005B/tree/master/laboratorio9"
               target={"_blank"} rel="noreferrer">
