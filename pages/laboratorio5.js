@@ -22,7 +22,7 @@ export default function laboratorio5() {
           <p className="font-semibold pl-4"> Ejemplo:</p>
           <div className="flex flex-col items-center justify-center space-y-4 md:flex-row space-x-8">
             <div className="mockup-code">
-              <code className="w-11/12 flex mx-auto text-slate-200">
+              <code className="w-11/12 flex mx-auto text-slate-200 text-base">
                 <span className="">
                   &lt;<span className="text-purple-400">img</span> className=
                   <span className="text-cyan-400">

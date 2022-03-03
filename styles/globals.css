@@ -37,10 +37,9 @@
 .string {
   @apply bg-red-600/70 rounded-xl text-white w-[80px] text-center font-bold mx-2;
 }
-tr{
+tr {
   @apply border-b-2 border-black/20 mb-2 py-2;
-  
 }
-code{
-  @apply text-neutral text-2xl font-bold 
+code {
+  @apply text-neutral text-2xl font-bold;
 }
