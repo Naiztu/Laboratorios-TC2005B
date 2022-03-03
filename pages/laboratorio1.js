@@ -3,7 +3,7 @@ import Card from "../components/Card";
 import Modal from "../components/Modal";
 import Layaout from "../components/Layaout";
 import { useFetch } from "../components/hooks/useFecth";
-import LoaderCard from "../components/loaderCard";
+import LoaderCard from "../components/LoaderCard";
 
 function Laboratorio1() {
   let url = "/api/html";
