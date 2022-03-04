@@ -3,8 +3,8 @@ import React from "react";
 export default function Card2({ data }) {
   const { title, link, img } = data || {};
   return (
-    <a href={link} target="_blank" rel="noreferrer" className="w-[320px] mx-auto my-4">
-      <div className="bg-blue-300 max-h-96 rounded-xl h-[190px] hover:shadow-xl overflow-hidden relative">
+    <a href={link} target="_blank" rel="noreferrer" className="w-[320px] mx-4 my-8">
+      <div className="bg-neutral/70 rounded-xl h-[190px] hover:shadow-xl overflow-hidden relative">
         <div className="absolute p-4 z-20 h-full w-full justify-between flex flex-col">
           <button className="p-2 backdrop-blur-sm bg-gray-800/30 w-8 h-8 justify-center items-center flex self-end rounded-xl border-gray-400/50 border hover:shadow-xl">
             <svg
