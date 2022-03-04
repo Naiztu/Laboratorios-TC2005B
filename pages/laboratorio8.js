@@ -36,7 +36,7 @@ function laboratorio8() {
       <div className="pt-16">
         <Promedio />
         <h1 className=" title"> APIS usadas en esta pagina</h1>
-        <div className="w-10/12 mx-auto flex flex-wrap mb-6">
+        <div className="w-10/12 mx-auto flex justify-center flex-wrap mb-6">
           {data.map((item)=>(
             <Card2 key={item.id} data={item}/>
           ))}
