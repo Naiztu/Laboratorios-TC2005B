@@ -55,6 +55,6 @@ export default function handler(req, res) {
         title: "Marko",
         img: "https://pbs.twimg.com/profile_images/1392922038273077248/Jbgk8IQs_400x400.jpg",
         link: "https://github.com/marko-js/marko",
-      },
+      }
     ]);
 }

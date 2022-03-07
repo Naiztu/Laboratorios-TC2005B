@@ -8,12 +8,12 @@ import Funcion5 from "../components/Funcion5";
 import Funcion6 from "../components/Funcion6";
 import { useFetch } from "../components/hooks/useFecth";
 import Layaout from "../components/Layaout";
+import LoaderCard from "../components/LoaderCard";
 import Modal from "../components/Modal";
-
 
 function Laboratorio4() {
   let url = "/api/javascript";
-  let {data}= useFetch(url);
+  let { data } = useFetch(url);
   return (
     <Layaout>
       <div className="pt-16 w-11/12 mx-auto flex flex-col">
@@ -33,11 +33,15 @@ function Laboratorio4() {
           <Funcion6 />
         </section>
       </div>
-      <h1 className="text-3xl font-bold w-11/12 mx-auto text-center">Preguntas:</h1>
+      <h1 className="text-3xl font-bold w-11/12 mx-auto text-center">
+        Preguntas:
+      </h1>
       <section className="w-full md:w-10/12 lg:w-8/12 mx-auto flex flex-col space-y-8 mb-16">
-        {data.map((item) => (
-          <Card item={item} key={item.id}></Card>
-        ))}
+        {data.length === 0 ? (
+          <LoaderCard />
+        ) : (
+          data.map((item) => <Card item={item} key={item.id}></Card>)
+        )}
       </section>
 
       {data.map((item) => (

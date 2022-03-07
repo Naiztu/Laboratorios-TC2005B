@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Card from "../components/Card";
 import { useFetch } from "../components/hooks/useFecth";
 import Layaout from "../components/Layaout";
+import LoaderCard from "../components/LoaderCard";
 import Login from "../components/Login";
 import Modal from "../components/Modal";
 import Shop from "../components/Shop";
@@ -21,9 +22,11 @@ export default function Laboratorio6() {
         Preguntas:
       </h1>
       <section className="w-full md:w-10/12 lg:w-8/12 mx-auto flex flex-col space-y-8 mb-16">
-        {data.map((item) => (
-          <Card item={item} key={item.id}></Card>
-        ))}
+        {data.length === 0 ? (
+          <LoaderCard/>
+        ) : (
+          data.map((item) => <Card item={item} key={item.id}></Card>)
+        )}
       </section>
       {data.map((item) => (
         <Modal item={item} key={item.id}></Modal>
