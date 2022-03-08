@@ -1,4 +1,7 @@
 import Layaout from "../components/Layaout";
+import LinkLaboratorios from "../components/LinkLaboratorios";
+
+const labs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 
 export default function Home() {
   return (
@@ -23,7 +26,8 @@ export default function Home() {
             <a
               className="btn rounded-full w-12 h-10 p-2 mt-3 animate-bounce lex items-center justify-center"
               href="https://github.com/Naiztu/Laboratorios-TC2005B"
-              target={"_blank"} rel="noreferrer"
+              target={"_blank"}
+              rel="noreferrer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -36,6 +40,16 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <section id="labs">
+        <br />
+        <br />
+        <h1 className="title">Laboratorios</h1>
+        <div className=" w-full mx-auto flex flex-wrap pb-12 justify-center">
+          {labs.map((i) => (
+            <LinkLaboratorios num={i} key={i} />
+          ))}
+        </div>
+      </section>
     </Layaout>
   );
 }

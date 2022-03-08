@@ -1,8 +1,6 @@
 import React from "react";
 import Link from "next/link";
 
-const labs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
-
 function Navbar() {
   return (
     <>
@@ -142,31 +140,12 @@ function Navbar() {
                 <a>Inicio</a>
               </Link>
             </li>
-            <li tabIndex={0}>
-              <a>
-                Apartados
-                <svg
-                  className="fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={20}
-                  height={20}
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-                </svg>
-              </a>
-              <ul className="p-2 overflow-y-auto h-screen scrollbar-thin scrollbar-thumb-transparent  scrollbar-track-transparent ">
-                {labs.map((i) => (
-                  <li key={i}>
-                    <Link href={`/laboratorio${i}`}>
-                      <a className=" bg-neutral hover:bg-neutral/95 transition ease-in-out hover:-translate-y-1 active:bg-primary active:scale-95 hover:scale-105 border-[1px]  border-white w-32 ">
-                        <p className="text-center">{`Labo ${i}`}</p>
-                      </a>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+            <li>
+              <Link href="/#labs">
+                <a>Laboratorios</a>
+              </Link>
             </li>
+            
           </ul>
         </div>
       </nav>
