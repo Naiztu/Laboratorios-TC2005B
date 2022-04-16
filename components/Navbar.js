@@ -146,7 +146,7 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <a href="https://github.com/Naiztu/Laboratorios-TC2005B" target={"_blank"} >
+              <a href="https://github.com/Naiztu/Laboratorios-TC2005B" target={"_blank"} rel="noreferrer"  >
                 Github
               </a>
             </li>

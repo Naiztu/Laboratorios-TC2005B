@@ -63,7 +63,7 @@ export default function Laboratorio17() {
             {data.rows.map((item, index) => (
               <tr key={index}>
                 {Object.entries(item).map((el) => (
-                  <td className="py-1 px-4">{el[1]}</td>
+                  <td key={el[0]} className="py-1 px-4">{el[1]}</td>
                 ))}
               </tr>
             ))}
