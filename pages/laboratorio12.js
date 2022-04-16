@@ -9,15 +9,13 @@ export default function Laboratorio12() {
   let { data } = useFetch(url);
   return (
     <Layaout>
-      <div className="pt-16">
-        <h1 className="title">Template Engienes</h1>
-        <div className=" w-10/12  mx-auto flex items-center justify-center flex-row flex-wrap mb-10">
-          {data.length === 0 ? (
-            <LoaderCard />
-          ) : (
-            data.map((i) => <Card2 data={i} key={i.id} />)
-          )}
-        </div>
+      <h1 className="title">Template Engienes</h1>
+      <div className=" mx-auto  mb-10 flex w-10/12 flex-row flex-wrap items-center justify-center">
+        {data.length === 0 ? (
+          <LoaderCard />
+        ) : (
+          data.map((i) => <Card2 data={i} key={i.id} />)
+        )}
       </div>
     </Layaout>
   );

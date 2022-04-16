@@ -6,7 +6,7 @@ export default async function handler(req, res) {
       service: "gmail",
       auth: {
         user: process.env.USER,
-        pass: process.env.PASS, 
+        pass: process.env.PASS,
       },
       tls: {
         rejectUnauthorized: false,

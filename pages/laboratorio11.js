@@ -4,10 +4,10 @@ import Layaout from "../components/Layaout";
 export default function Laboratorio11() {
   return (
     <Layaout>
-      <div className="pt-16 w-11/12 mx-auto">
+      <div className="mx-auto w-11/12">
         <h1 className="title">Partes del package.JSON</h1>
-        <div className="overflow-x-auto ">
-          <table className="w-[900px] mx-auto my-10">
+        <div className="mb-16 overflow-x-auto">
+          <table className="mx-auto mt-10 w-[900px]">
             <thead>
               <tr className="bg-neutral/80 text-white">
                 <th>Tipo</th>
@@ -112,8 +112,8 @@ export default function Laboratorio11() {
                 </td>
                 <td className="text-center">
                   Nombre del autor del paquete o un{" "}
-                  <span className="array px-2">array</span> con <code>name</code>,{" "}
-                  <code>email</code> y/o <code>url</code>.
+                  <span className="array px-2">array</span> con{" "}
+                  <code>name</code>, <code>email</code> y/o <code>url</code>.
                 </td>
               </tr>
               <tr>

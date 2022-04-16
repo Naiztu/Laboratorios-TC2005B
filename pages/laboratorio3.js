@@ -10,13 +10,11 @@ export default function Laboratorio3() {
   let { data } = useFetch(url);
   return (
     <Layaout>
-      <h1 className=" text-5xl font-bold mx-auto pb-6 pt-24 text-center">
-        CSS:
-      </h1>
+      <h1 className=" title">CSS:</h1>
 
       <div className="divider px-10"></div>
 
-      <section className="w-full md:w-10/12 lg:w-8/12 mx-auto flex flex-col space-y-8 mb-16">
+      <section className="mx-auto mb-16 flex w-full flex-col space-y-8 md:w-10/12 lg:w-8/12">
         {data.length === 0 ? (
           <LoaderCard />
         ) : (

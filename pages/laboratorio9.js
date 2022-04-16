@@ -4,13 +4,16 @@ import Layaout from "../components/Layaout";
 export default function laboratorio9() {
   return (
     <Layaout>
-      <div className="pt-16 flex justify-center flex-col h-screen sm:h-full">
+      <div className="flex h-screen flex-col justify-center sm:h-full">
         <h1 className="title">Ejercicio en Access</h1>
-        <a  href="https://github.com/Naiztu/Laboratorios-TC2005B/tree/master/laboratorio9"
-              target={"_blank"} rel="noreferrer">
+        <a
+          href="https://github.com/Naiztu/Laboratorios-TC2005B/tree/master/laboratorio9"
+          target={"_blank"}
+          rel="noreferrer"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-1/2 my-10 mx-auto xl:w-4/12"
+            className="my-10 mx-auto w-1/2 xl:w-4/12"
             viewBox="0 0 109.987 107.5"
           >
             <path

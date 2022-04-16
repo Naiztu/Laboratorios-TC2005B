@@ -136,7 +136,7 @@ function Navbar() {
         <div className="flex-none">
           <ul className="menu menu-horizontal p-0">
             <li>
-              <Link href="/">
+              <Link href="/#">
                 <a>Inicio</a>
               </Link>
             </li>
@@ -145,7 +145,12 @@ function Navbar() {
                 <a>Laboratorios</a>
               </Link>
             </li>
-            
+            <li>
+              <a href="https://github.com/Naiztu/Laboratorios-TC2005B" target={"_blank"} >
+                Github
+              </a>
+            </li>
+
           </ul>
         </div>
       </nav>

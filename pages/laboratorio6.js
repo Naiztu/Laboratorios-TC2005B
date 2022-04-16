@@ -15,15 +15,14 @@ export default function Laboratorio6() {
 
   return (
     <Layaout>
-      <div className="pt-16">
-        {access ? <Shop /> : <Login setAccess={setAccess} />}
-      </div>
-      <h1 className="text-3xl font-bold w-11/12 mx-auto text-center mt-16">
+      {access ? <Shop /> : <Login setAccess={setAccess} />}
+
+      <h1 className="mx-auto mt-16 w-11/12 text-center text-3xl font-bold">
         Preguntas:
       </h1>
-      <section className="w-full md:w-10/12 lg:w-8/12 mx-auto flex flex-col space-y-8 mb-16">
+      <section className="mx-auto mb-16 flex w-full flex-col space-y-8 md:w-10/12 lg:w-8/12">
         {data.length === 0 ? (
-          <LoaderCard/>
+          <LoaderCard />
         ) : (
           data.map((item) => <Card item={item} key={item.id}></Card>)
         )}

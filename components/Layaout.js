@@ -3,7 +3,7 @@ import React from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
-export default function Layaout({ children}) {
+export default function Layaout({ children }) {
   return (
     <>
       <Head>
@@ -11,7 +11,7 @@ export default function Layaout({ children}) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Navbar />
-      {children}
+      <div className="pt-16">{children}</div>
       <Footer />
     </>
   );

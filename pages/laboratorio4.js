@@ -16,27 +16,25 @@ function Laboratorio4() {
   let { data } = useFetch(url);
   return (
     <Layaout>
-      <div className="pt-16 w-11/12 mx-auto flex flex-col">
-        <h1 className=" text-5xl font-bold mx-auto pb-6 pt-16">JavaScript</h1>
-        <div className="divider" />
-        <section className="w-full md:w-10/12 lg:w-8/12 mx-auto flex flex-col space-y-8 mb-24">
-          <Funcion1 />
+      <h1 className=" title">JavaScript</h1>
+      <div className="divider" />
+      <section className="mx-auto mb-24 flex w-full flex-col space-y-8 md:w-10/12 lg:w-8/12">
+        <Funcion1 />
 
-          <Funcion2 />
+        <Funcion2 />
 
-          <Funcion3 />
+        <Funcion3 />
 
-          <Funcion4 />
+        <Funcion4 />
 
-          <Funcion5 />
+        <Funcion5 />
 
-          <Funcion6 />
-        </section>
-      </div>
-      <h1 className="text-3xl font-bold w-11/12 mx-auto text-center">
+        <Funcion6 />
+      </section>
+      <h1 className="mx-auto w-11/12 text-center text-3xl font-bold">
         Preguntas:
       </h1>
-      <section className="w-full md:w-10/12 lg:w-8/12 mx-auto flex flex-col space-y-8 mb-16">
+      <section className="mx-auto mb-16 flex w-full flex-col space-y-8 md:w-10/12 lg:w-8/12">
         {data.length === 0 ? (
           <LoaderCard />
         ) : (

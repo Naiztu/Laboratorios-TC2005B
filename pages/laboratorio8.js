@@ -34,16 +34,14 @@ const data = [
 function laboratorio8() {
   return (
     <Layaout>
-      <div className="pt-16">
-        <Promedio />
-        <h1 className=" title"> APIS usadas en esta pagina</h1>
-        <div className="w-10/12 mx-auto flex justify-center flex-wrap mb-6">
-          {data.length === 0 ? (
-            <LoaderCard />
-          ) : (
-            data.map((item) => <Card2 key={item.id} data={item} />)
-          )}
-        </div>
+      <Promedio />
+      <h1 className=" title"> APIS usadas en esta pagina</h1>
+      <div className="mx-auto mb-6 flex w-10/12 flex-wrap justify-center">
+        {data.length === 0 ? (
+          <LoaderCard />
+        ) : (
+          data.map((item) => <Card2 key={item.id} data={item} />)
+        )}
       </div>
     </Layaout>
   );
