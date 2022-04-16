@@ -50,7 +50,7 @@ export default function Laboratorio17() {
           </ul>
         </div>
       </div>
-      <div className="mx-auto w-9/12 max-h-[500px] overflow-y-auto my-4  flex  justify-center">
+      <div className="mx-auto w-9/12 max-h-[500px] overflow-y-auto my-4  flex  justify-center scrollbar-thin  ">
         <table className="table-auto ">
           <thead className="bg-neutral/20">
             <tr className="">

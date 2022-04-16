@@ -2,7 +2,7 @@ import Layaout from "../components/Layaout";
 import LinkLaboratorios from "../components/LinkLaboratorios";
 import { FaArrowDown } from "react-icons/fa";
 
-const labs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17];
+const labs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17];
 
 export default function Home() {
   return (
@@ -25,9 +25,9 @@ export default function Home() {
             </p>
             <a
               href="#labs"
-              className="flex mx-auto btn mt-3 h-10 w-12 -m-4 animate-bounce items-center justify-center rounded-full "
+              className=" mx-auto btn mt-3 h-10 w-12  animate-bounce  rounded-full "
             >
-              <FaArrowDown className="w-full" />
+              <FaArrowDown className="-mt-[10px]" size={70} />
             </a>
           </div>
         </div>
