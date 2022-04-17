@@ -1,7 +1,7 @@
 import React from "react";
 import cookie from "js-cookie";
 import { useState } from "react";
-import LoginForm from "./loginForm";
+import LoginForm from "./LoginForm";
 
 export default function LoginCookies({ galleta, setGalleta }) {
   const [username, setUsername] = useState(cookie.get("user") || "")

@@ -1,6 +1,6 @@
 import Axios from 'axios';
 import React, { useState } from 'react';
-import LoginForm from './loginForm';
+import LoginForm from './LoginForm';
 
 export default function LoginBD({ setData }) {
     const [username, setUsername] = useState("")
