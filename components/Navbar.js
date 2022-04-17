@@ -145,7 +145,7 @@ function Navbar() {
                 <a>Laboratorios</a>
               </Link>
             </li>
-            <li>
+            <li className=" hidden sm:inline">
               <a href="https://github.com/Naiztu/Laboratorios-TC2005B" target={"_blank"} rel="noreferrer"  >
                 Github
               </a>

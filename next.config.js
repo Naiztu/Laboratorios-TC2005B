@@ -4,6 +4,7 @@ const nextConfig = {
   env: {
     USER: process.env.USER,
     PASS: process.env.PASS,
+    SALT: process.env.SALT,
     MYSQL_ADDON_LIMIT: process.env.MYSQL_ADDON_LIMIT,
     MYSQL_ADDON_HOST: process.env.MYSQL_ADDON_HOST,
     MYSQL_ADDON_USER: process.env.MYSQL_ADDON_USER,

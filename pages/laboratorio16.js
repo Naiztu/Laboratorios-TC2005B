@@ -1,7 +1,7 @@
 import React from "react";
 import Layaout from "../components/Layaout";
 
-export default function laboratorio16() {
+export default function Laboratorio16() {
     return (
         <Layaout>
             <h1 className="title">Creación de constraints para instrumentar integridad referencial en MariaDB</h1>

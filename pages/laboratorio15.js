@@ -1,7 +1,7 @@
 import React from "react";
 import Layaout from "../components/Layaout";
 
-export default function laboratorio15() {
+export default function Laboratorio15() {
     return (
         <Layaout>
             <h1 className="title"> Conociendo el ambiente de MariaDB</h1>
